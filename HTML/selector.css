@@ -1,0 +1,75 @@
+/* .box1{
+    height: 200px;
+    width: 400px;
+    background: violet;
+}
+.box2{
+    height: 200px;
+    width: 400px;
+    background: lightblue;
+}
+.box3{
+    height: 200px;
+    width: 400px;
+    background: lightgreen;
+} */
+
+.header{
+    height: 100px;
+    width: 100%;
+    background: lightblue;
+    text-align: center;
+    /* border-width: 5px;
+    border-color:chocolate;
+    border-style:dotted; */
+    border: 4px dotted chocolate;
+    border-radius: 50px;
+}
+.nav{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background: lightcoral;
+    border-style:solid dotted double dashed;
+    border-width:5px 10px 2px 15px;
+    border-color: blueviolet pink red darkorange;
+    border-radius: 25%;
+}
+.services{
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    background: lightgreen;
+    border-style:solid dotted double dashed;
+    border-width:5px 10px 7px 15px;
+    border-color: blueviolet pink chartreuse darkorange;
+    border-radius: 30px 70px 50px 0;
+}
+.projects{
+    height: 300px;
+    width:300px;
+    text-align: center;
+    background: lightblue;
+    border:5px dotted orange ;
+    outline: 5px dotted orangered;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.box1{
+    width: 400px;
+    border: 1px solid black;
+    background: lightcyan;
+    box-sizing: border-box;
+    padding: 50px 0 0 0;
+    margin: 10px 0 10px 50px;
+}
+.footer{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    background: lightcoral;
+    border-color:black;
+    border-style:groove;
+    border-width:5px;
+    
+}

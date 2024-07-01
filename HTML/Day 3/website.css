@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background: palegreen;
+    color: white;
+    padding: 40px 0;
+}
+.con{
+    width: 1200px;
+    margin: 0 auto;
+}.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+.menu{
+    background: lightgreen;
+    color: white;
+    padding: 10px 0;
+}
+.menu li{
+    display: inline;
+    padding: 0 10px;
+}
+
+.image{
+    width: 100%;
+    height: 450px;
+    object-fit: fill;
+}
+
+
+
+.footer{
+    background: pink;
+    color: yellowgreen;
+    padding: 10px 0;
+}

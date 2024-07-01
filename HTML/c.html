@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>HTML Form</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" id="lname" name="fName" required><br>
+            <hr>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="fName" required><br>
+            <hr>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="0" max="100" required><br>
+            <hr>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="gender" name="gender" value="Male">Male
+            <input type="radio" id="gender" name="gender" value="Female">Female
+            <hr>
+            Country:
+            <select name="country">
+                <option value="Nepal">Nepal</option>
+                <option value="India">India</option>
+                <option value="Argentina">Argentina</option>
+            </select>
+             <hr>
+             <label for="Course">Courses:</label>
+             <input type="checkbox" id="course" name="course" value="Web Design">Web Design
+             <input type="checkbox" id="course" name="course" value="Flutter">Flutter
+             <input type="checkbox" id="course" name="course" value="Python">Python
+             <hr>
+             
+             <input type="email" name="email"  placeholder="Enter your email">
+                <hr>
+            
+                <input type="password" name="password"  placeholder="Enter your password">   
+                <hr>
+                Message:<textarea name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            <button>Send</button>
+        </fieldset>
+    </form>
+</body>
+</html>

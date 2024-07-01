@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 600px;
+    background: blueviolet;
+    border: 2px soild red;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background: lightcoral;
+    float: left;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background: lightgreen;
+    float: right;
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background: lightblue;
+    float: left;
+    clear: both; /*clear float*/
+}
+.box4{
+    width: 100px;
+    height: 100px;
+    background: lightgoldenrodyellow;
+    float: right;
+    /* clear: both; */
+}
