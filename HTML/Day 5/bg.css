@@ -1,0 +1,22 @@
+.box{
+    height: 100vh;
+    color: chartreuse;
+    background-color: chocolate;
+    background-image: url(a.jpg),url(b.jpg), url(c.jpg), url(d.jpg), url(e.jpg);
+    background-size: 200px auto,200px auto,200px auto,200px auto,200px auto;
+    background-repeat: no-repeat;
+    background-position: top right, top left, bottom left, bottom right,center center;
+}
+.box2{
+    height: 50vh;
+    background-image: linear-gradient(violet,red);
+}
+.box3{
+    height: 50vh;
+    background-image: radial-gradient(violet,red);
+}
+.box3{
+    height: 50vh;
+    background-image: linear-gradient(rgba(255, 192, 203, 0.418),rgba(0, 0, 255, 0.747)),url(https://th.bing.com/th/id/OIP.NK9ERASPds3ecuVfAKZxPgHaE8?rs=1&pid=ImgDetMain.jpg);
+    background-size:100%;
+}
