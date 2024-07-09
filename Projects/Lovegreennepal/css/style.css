@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root{
+    --dg:#034404;
+    --lg:#237c04;
+    --wh:#fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--wh);
+}
+p{
+    line-height: 1.7;
+}
+.top{
+background: var(--dg);
+padding: 10px 0;
+font-size: 13px;
+}
+.con{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.top ul{
+    display: flex;
+    gap: 20px;
+}
+header{
+    background: var(--lg);
+    padding: 20px 0;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav span{
+    display: none;
+    color: var(--wh);
+    font-size: 30px;
+}
+.block{
+    display: block;
+    padding: 0 20px;
+
+}
+.icon{
+    color: var(--wh);
+    font-size: 15px;
+    padding-left:10px;
+}
+.banner{
+    background: linear-gradient(var(--dg),var(--lg));
+    padding: 40px 0;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 14px 2px var(--wh);
+}
+.w-100{
+    width: 100%;
+    margin: 20px 0;
+}
+.intro{
+    padding: 30px 0;
+}
+.in-right{
+    background: var(--dg);
+    padding: 20px;
+    color: var(--wh);
+    width: 50%;
+}
+footer{
+    background-color: var(--dg);
+    padding: 30px 0;
+    color: #fff;
+}
+.fbox{
+    margin: 20px 0;
+
+}
+.fbox h3{
+    padding-bottom: 20px 0;
+}
+.fbox li{
+    line-height: 30px;
+}
+.copyright{
+    padding: 20px;
+    background: rgb(1, 30, 1);
+    color: var(--wh);
+}
+.featured{
+    background: #dae45d;
+}
+.sp{
+    width: 60px;
+    height: 5px;
+    background: var(--lg);
+    margin: 20px 0;
+}
+.ffbox{
+    background: #418a2b;
+    padding: 20px 0;
+}
+.ffbox li{
+    font-size: 20px;
+    margin: 20px 0;
+    /* font-weight: bold; */
+    border-bottom: 2px solid --wh;
+    padding: 20px 0;
+}

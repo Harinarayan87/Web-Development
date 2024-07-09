@@ -1,0 +1,103 @@
+body{
+    height: 1800px;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background: gold;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background: green;
+    
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    position: sticky;
+    top: 10px; /*                   stick when its 10px down on y-axis*/
+}
+
+.item,.item1{
+    width: 100px;
+    height: 100px;
+}
+.item{
+    background: red;
+    left: 50px;
+    top: 50px;
+    position: relative;
+}
+.item1{
+    background: yellow;
+    position: relative;
+}
+.a,.b{
+    width: 40px;
+    height: 40px;
+    position: absolute; /* parent div must be position:relative to use absolute position*/
+
+}
+.a{
+    background: aqua ;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.b{
+    background: violet;
+    right: 30px;
+    bottom: 25px;
+    z-index: 2;
+}
+
+.bank{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+}
+.bank img{
+    width: 100%;
+    height: 100%;
+}
+.bank-b{
+    position: absolute;
+    width: 100%;
+    bottom: -40px;
+    color: white;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+
+}
+
+.bank-b:hover{
+    bottom: 0px;
+}
+
+
+ul{
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    position: relative;
+}
+.dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 140px;
+    display: none;
+}
+.dropdown li{
+    display: block;
+}
+li:hover .dropdown{
+    display: block;
+}

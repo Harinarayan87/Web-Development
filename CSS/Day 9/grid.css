@@ -1,0 +1,32 @@
+.box{
+    padding: 30px;
+    border: 2px solid #000;
+}
+.con{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.a{
+    grid-column: 1/4;
+}
+.b{
+    grid-row: 2/4;
+}
+.d{
+    grid-row: 2/4;
+    grid-column: 3;
+}
+.sbox img{
+    width: 100%;
+}
+.services{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+
+}
