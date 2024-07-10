@@ -120,12 +120,18 @@ footer{
 }
 .ffbox{
     background: #418a2b;
-    padding: 20px 0;
+    padding: 20px ;
 }
 .ffbox li{
-    font-size: 20px;
+    /* font-size: 20px; */
     margin: 20px 0;
     /* font-weight: bold; */
     border-bottom: 2px solid --wh;
-    padding: 20px 0;
+    /* padding: 20px 0; */
+}
+.f-right{
+    width: 45%;
+}
+.f-left{
+    width: 45%;
 }
