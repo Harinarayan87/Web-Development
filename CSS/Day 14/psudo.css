@@ -1,0 +1,80 @@
+/* p:first-child{
+    background: green;
+}
+p:last-child{
+    background: red;
+}
+p:nth-child(odd){
+    background: rgb(0, 255, 17);
+}
+p:nth-child(even){
+    background: blue;
+} */
+
+a:visited{
+    color: grey;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: green;
+}
+a:link{
+    color: rgb(0, 255, 213);
+}
+
+:root{
+    --brand:aqua;
+    --size:400px;
+}
+h1{
+    color: var(--brand);
+    width: var(--size);
+    height:var(--size);
+
+}
+input:focus{
+    outline: none;
+}
+input:required{
+    border: 2px solid red;
+}
+input:read-only{
+    background: grey;
+}
+.e p::first-letter{
+    color: blue;
+    font-size: 88px;
+}
+.e p::first-line{
+    color: red;
+}
+.e p::selection{
+background: yellow;
+color: blueviolet;
+}
+::marker{
+    color: yellow;
+}
+input::placeholder{
+    color: blue;
+}
+h2::before{
+    content: 'Hello'; 
+    background: green;}
+h2::after{content: 'World'; background: red;}
+
+.abc p{
+    color:orange;
+}
+.abc > p{
+    background: skyblue
+
+}
+.abc + p{
+    background: green;
+}
+.abc ~ p{
+    background: red;
+}

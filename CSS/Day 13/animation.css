@@ -1,0 +1,87 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: colorbg;
+    animation-duration: 7s;
+    animation-iteration-count: 5;
+    animation-delay: 1s;
+    position: relative;
+    animation-direction: alternate;
+    /* alternate reverse normal alternate-reverse */
+    animation-fill-mode: both ;
+    /* backwards forwards both */
+}
+@keyframes colorbg{
+    0%{background: blue;left: 0;}
+    25%{background: green;}
+    50%{background: yellow;}
+    75%{background: pink;}
+    100%{background: red; left: 80%;}
+}
+.box:hover{
+    animation-play-state: paused;
+}
+
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: rot 2s linear infinite;
+    
+}
+@keyframes rot{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.ani{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    position: relative;
+    animation: move 5s forwards, blink 2s 6s infinite;
+}
+@keyframes move{
+    0%{left: 0;}
+    100%{left: 600px;}
+}
+.a{
+   animation-timing-function: ease;
+}
+.b{
+    animation-timing-function: ease-in;
+}
+.c{
+    animation-timing-function: ease-out;
+}
+
+.d{
+    animation-timing-function: ease-in-out;
+}
+.e{
+    animation-timing-function: linear;
+}
+.f{
+    animation-timing-function: steps(10,start);
+}
+@keyframes blink{
+    0%{opacity: 1;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    animation: cir 5s linear forwards;
+}
+@keyframes cir{
+    0%{top: 0%;left:0px;transform: rotate(0deg);}
+    50%{top:88%; left:100px;transform: rotate(160deg);}
+    70%{top: 48%; left:240px;transform: rotate(250deg);}
+    100%{top: 88%; left:440px;transform: rotate(360deg);}
+}
