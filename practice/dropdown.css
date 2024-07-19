@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav ul{
+    list-style: none;
+}/* yo chai ul ma list style kahiley ni hudoin tei vyrw pahila noi declare gardeko*/
+a{
+    text-decoration: none;
+    color: white;
+} /* ani yo poni a ma text decoration hudoin so first moi declare*/
+nav{
+    background: #024fa2;
+    padding: 20px 0;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+} /* inline eutoi line ma banaunw lae flex class */
+.gap{
+    gap: 20px;
+} /* yp gap chai jaha flex lagya xa tya use garnw milx content ko bich ma gap ko lagi*/
+nav ul li{
+    position: relative; /*parent position of dropdown must be relative of the dropdown*/
+}
+.dropdown{
+    display: none;
+}/*dropdown chai first ma nwdekhaune tei vyrw yesko display none gardeko*/
+
+.dropdown{
+    position: absolute; 
+    background: gray;
+    padding-left: 10px;
+    width: 250px;
+    top: 100%;
+    left: 0;
+}/*yo chai hover garda dekhine dropdown lae customize gareko*/
+.dropdown li{
+    border-top: 1px solid #ccc;
+    line-height: 35px;
+}
+nav ul li:hover .dropdown{ 
+    display: block;
+}/* nav ko ul ko li matlab services lae hover garda k khulos .dropdown vanne chij
+ mathi normally luka thim hover garda chai dekhiyos soo 
+ display:block; garim hover ma */
