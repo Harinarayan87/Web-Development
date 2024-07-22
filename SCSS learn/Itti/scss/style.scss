@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+$primary:#bd1e2d;
+$secondary:#191919;
+$white:#fff;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Exo', sans-serif;
+}
+
+.header{
+    &top{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: $white;
+    }
+    &bottom{
+        padding: 20px;
+        text-align: center;
+
+    }
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+@mixin flex($jc:space-between, $ai:center , $gap: 10px){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    gap: $gap;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.contents{   
+@include flex;
+.btn{
+    @include flex(start, center, 15px);
+}
+.green{
+    color: green;
+}
+}
+.header-bottom{
+    background: #fff;
+}
+.w-100{
+    width: 100%;
+}
+.cart ul{
+    @include flex(start,center,10px )
+}
+
+

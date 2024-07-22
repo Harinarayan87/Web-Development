@@ -1,0 +1,64 @@
+$a:#ff0000;
+$b:#00ff00;
+$size: 100px;
+h1{
+    background: $a;
+    border: 2px solid $b;
+    width: $size;
+    height: $size;
+}
+@mixin res($min,$max){
+    @media (min-width: $min) and (max-width: $max){
+        @content;
+    }
+
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    border: 2px solid $a;
+    @include res(0px, 480px){
+        background: violet;
+    }
+    @include res(480px, 992px){
+        background: yellowgreen;
+    }
+    @include res(992px, 1600px){
+        background: palegreen;
+    }
+}
+nav{
+    background: yellow;
+    ul{
+        list-style: none;
+        a{
+            text-decoration: none;
+            &:hover
+            {
+                color: yellow;
+            }
+        }
+    }
+}
+.header{
+    &left{
+        color: orange;
+    }
+    &right{
+        color: red;
+    }
+}
+/* like a function ,pass paramenters*/
+@mixin flex($jc:space-between, $ai:center){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+.con{
+    @include flex;
+}
+.con1{
+    @include flex(center, start);
+}
+@import "header";

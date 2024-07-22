@@ -1,0 +1,20 @@
+/* must use underscore before file name  while making partial file*/
+
+header{
+    background: orangered;
+    padding: 30px;
+}
+
+/* extend property of the parent to the child class*/
+.abcd{
+    padding: 30px;
+    border: 2px solid greenyellow;
+}
+.a{
+    @extend .abcd; /*extending property of the .abcd class*/
+    background: red;
+}
+.b{
+    @extend .abcd;
+    background: yellow;
+}

@@ -1,0 +1,98 @@
+h1 {
+  background: #ff0000;
+  border: 2px solid #00ff00;
+  width: 100px;
+  height: 100px;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px;
+  border: 2px solid #ff0000;
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .box {
+    background: violet;
+  }
+}
+@media (min-width: 480px) and (max-width: 992px) {
+  .box {
+    background: yellowgreen;
+  }
+}
+@media (min-width: 992px) and (max-width: 1600px) {
+  .box {
+    background: palegreen;
+  }
+}
+
+nav {
+  background: yellow;
+}
+nav ul {
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+}
+nav ul a:hover {
+  color: yellow;
+}
+
+.headerleft {
+  color: orange;
+}
+.headerright {
+  color: red;
+}
+
+/* like a function ,pass paramenters*/
+.con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.con1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+/* must use underscore before file name  while making partial file*/
+header {
+  background: orangered;
+  padding: 30px;
+}
+
+/* extend property of the parent to the child class*/
+.abcd, .b, .a {
+  padding: 30px;
+  border: 2px solid greenyellow;
+}
+
+.a {
+  /*extending property of the .abcd class*/
+  background: red;
+}
+
+.b {
+  background: yellow;
+}/*# sourceMappingURL=style.css.map */
