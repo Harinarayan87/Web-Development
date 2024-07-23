@@ -1,0 +1,553 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Exo", sans-serif;  
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: $white;
+}
+a:hover{
+    color: $red;
+}
+.bold{
+    font-weight: bold;
+
+}
+.icon{
+    font-size: 15px;
+    padding: 0 10px;
+
+}
+.btn1{
+    background: $red;
+    color: $white;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.title{
+    font-size: 30px;
+    padding: 30px 0;
+    text-align: center;
+
+}
+.w-100{
+    width: 100%;
+    height: auto;
+}
+.product-img{
+    width: 90%;
+    height: 200px;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.swiper-pagination{
+    top: 120px;
+    position:relative;
+    bottom: 8px;
+    margin-top: 40px;
+}
+.h-65{
+    height: 65px;
+    overflow: hidden;
+}
+
+.top{
+    background: $black;
+    padding: 15px 0;
+    color: $white;
+    .container{
+        @include flex;
+        ul{
+            @include flex;
+            gap: 20px;
+        }
+        .content{
+            @include tablet{
+                margin: auto;
+            }
+        span{
+            color: green;
+        }
+    }
+    .contact{
+        @include tablet{
+            display: none;
+        }
+    }
+    .account{
+        @include tablet{
+            display: none;
+        }
+    }
+}
+}
+header{
+    padding: 20px 0;
+    .logo{
+        @include tablet{
+            width: 100px;
+        }
+        width: 150px;
+    }
+    .container{
+        @include flex;
+        .menu{
+            @include mobile{
+                display: block;
+            }
+            display: none;
+        }
+        ul{
+            @include flex;
+            @include mobile{
+                display: flex;
+                justify-content: start;
+            }
+            gap: 25px;
+            a{
+                @include laptop{
+                    display: none;
+                }
+                color: $black;
+                &:hover{
+                    color: $red;
+                }
+            }
+            
+        }
+        form{
+            @include tablet{
+                display: none;
+            }
+        .search{
+            width: 280px;
+            height: 41px;
+            border-radius: 10px;
+            border: 1px solid gray;
+            padding-left:10px;
+        }
+        .btn{
+            background: $red;
+            color: $white;
+            height: 41px;
+            width: 42px;
+            padding: auto 12px;
+            border-radius: 10px;
+            position: relative;
+            left: -40px;
+            border: none;
+        }
+    }
+    }
+}
+nav{
+    @include tablet{
+        display: none;
+    }
+    background: $black;
+    padding: 18px 0;
+    .container{
+        ul{
+            @include flex;
+            gap: 20px;
+            li{
+                a{
+                    padding: 18px 0;
+                    color: $white;
+                    &:hover{
+                        background: $red;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+.banner{
+        &-slide{
+            @include tablet{
+                flex-direction: column-reverse;
+            }
+            @include flex;
+            gap: 20px;
+            .left{
+                width: 50%;
+                h2{
+                    font-size: 30px;
+                    padding: 10px 0;
+                }
+                p{
+                    padding: 10px 0;
+                    line-height: 1.6;
+                    color: $gray;
+                }
+            }
+            .right{
+                width: 50%;
+                img{
+                    width: 80%;
+                }
+            }
+            
+        }
+    }
+
+    .brand{
+        padding: 20px 0;
+        img{
+            width: 100px;
+            height: 100px;
+
+        }
+    }
+
+    .product{
+        padding: 20px 0;
+        &-box{
+            width: 250px;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .absolute{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            span{
+                color: red;
+                margin: 5px 0;
+            }
+            strike{
+                color: $red;
+                
+            }
+            h4{
+                font-weight: 400;
+                margin: 5px 0;
+            }
+            .gray{
+                color: rgba(128, 128, 128, 0.36);
+            }
+            p{
+                margin: 5px 0;
+            }
+        }
+    }
+.category{
+    .categories{
+        @include flex(start,center);
+        flex-wrap: wrap;
+        gap: 40px;
+        a{
+            color: black;
+        .box1{
+            width: 100px;
+        .image{
+            position: relative;
+            height: 110px;
+            .img1{
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            .img2{
+                position: absolute;
+                left: 0;
+                top: 0;
+                display: none;
+            }
+            &:hover .img2{
+                display: block;
+            }
+          }
+          p{
+            text-align: center;
+          }
+        }
+    }
+    }
+}
+.ad{
+    margin: 30px 0;
+    .container{
+        @include flex;
+        @include tablet{
+            flex-direction: column;
+        }
+        gap: 20px;
+        img{
+            border-radius: 15px;
+        }
+    }
+}
+
+.product{
+    padding: 20px 0;
+    &-box1{
+        @include flex;
+        .image1{
+            width: 100%;
+            height: 200px;
+            img{
+                width: 90%;
+                position: relative; 
+                }
+            .absolute{
+                font-size: 15px;
+                position: absolute;
+                top: 0;
+                right: 0;
+            } 
+                    
+        }  
+        .con{
+            align-items: start;
+        h4{
+            font-weight: 400;
+            margin: 5px 0;
+            width: 200px;
+        }
+        .gray{
+            color: rgba(128, 128, 128, 0.36);
+        }
+        p{
+            margin: 5px 0;
+        }
+    }
+}
+    &-box2{
+        @include flex;
+        .image1{
+            width: 100%;
+            height: 200px;
+            img{
+                width: 90%;
+                position: relative; 
+                }
+            .absolute{
+                font-size: 15px;
+                position: absolute;
+                top: 200px;
+                right: 0;
+            } 
+                    
+        }  
+        .con{
+            align-items: start;
+        h4{
+            font-weight: 400;
+            margin: 5px 0;
+            width: 200px;
+        }
+        .gray{
+            color: rgba(128, 128, 128, 0.36);
+        }
+        p{
+            margin: 5px 0;
+        }
+        
+    }
+}
+}
+.app{
+    margin: 30px;
+    .container{
+        @include flex(start,center);
+        @include tablet{
+            flex-direction: column;
+            margin: auto;
+        }
+        .appleft{
+            width: 50%;
+            span{
+                color: $red;
+            }
+            .appl{
+                @include flex(start,start);
+                @include tablet{
+                    flex-direction: column;
+                    margin: auto;
+                }
+                img{
+                    @include tablet{
+                        width: 300px;
+                    }
+                    width: 130px;
+                }
+            }
+            .appr{
+                width: 300px;
+                img{
+                    width: 30px;
+                }
+                .flex{
+                    border: 1px solid rgba(128, 128, 128, 0.401);
+                    border-radius: 5px;
+                    margin:8px 5px;
+                    padding: 5px 10px;
+                    @include flex(start,center);
+                    @include tablet{
+                        margin: auto;
+                        padding: auto;
+
+                    }
+                }
+            }
+            h3{
+                font-size: 22px;
+                padding: 10px 0;
+            }
+        }
+        .appright{
+        width: 50%;
+
+        }
+        img{
+            @include tablet{
+                width: 300px;
+            }
+            width: 80%;
+        }
+    }
+}
+
+.footer{
+    background: $black;
+    color: $white;
+    padding: 40px;
+    img{
+        width: 150px;
+    }
+    .container{
+        @include flex(space-between,start);
+        @include tablet{
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .col1{
+            @include mobile{
+                width: 100%;
+            }
+            width: 20%;
+            margin: 10px 0;
+            h4{
+                margin: 10px 0;
+            }
+            a{
+                padding: 10px 0;
+            }
+            button{
+                @include mobile{
+                    width: 100%;
+                }
+                margin: 10px 0;
+                background: $black;
+                color: $white;
+                border: 1px solid $white;
+                padding: 10px 20px;
+                border-radius: 5px;
+            }
+
+        }
+        .col2{
+            @include mobile{
+                width: 100%;
+            }
+            width: 20%;
+            h4{
+                margin: 10px 0;
+            }
+        }
+        .col3{
+            @include mobile{
+                width: 100%;
+                margin: auto;
+            }
+            width: 40%;
+            p{
+                margin: 10px 0;
+            }
+            .search{
+                @include mobile{
+                    width: 100%;
+                }
+                width: 280px;
+                height: 50px;
+                border-radius: 10px;
+                border: 1px solid gray;
+                padding-left:10px;
+                margin: 10px 0;
+            }
+            .btn{
+                @include mobile{
+                    width: 100%;
+                    position:static;
+                }
+                background: $red;
+                color: $white;
+                height: 51px;
+                width: 120px;
+                padding: auto 40px;
+                border-radius: 10px;
+                position: relative;
+                left: -50px;
+                border: none;
+            }
+            .social{
+                @include mobile{
+                    width: 100%;
+                    margin: auto;
+                    margin: 15px 0;
+                }
+                a{
+                    padding: 10px;
+                    font-size: 20px;
+                }
+            }
+            .payment{
+                margin: 10px 0;
+                img{
+                    width: 50px;
+                    margin: 10px;
+                }
+            }
+        }
+        
+    }
+    .container{
+        .content{
+            margin: 20px 0;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+            padding: 20px 0;
+            p{
+                margin: 20px 0;
+                text-align: center;
+            }
+        }
+        .copyright{
+            text-align: center;
+            margin: 20px 0;
+        }
+    }
+    .container{
+        .copyright{
+            text-align: center;
+            margin: 20px 0;
+            margin: auto;
+        }
+    }
+}
