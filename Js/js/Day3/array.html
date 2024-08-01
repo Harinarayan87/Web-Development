@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>An array is an object that can store multiple values at once</h2>
+    <script>
+        var food=['apple','mango','kiwi','banana']
+        console.log(food)
+        console.log(food[1])
+        console.log(food[4])
+        for(var i=0;i<=4;i++){
+            console.log(food[i])
+        }
+
+        //for in/ of
+        for(item of food){
+            console.log(item)
+        }
+        for (const item in food){
+            console.log(food[item])
+        }
+
+        var animal=new Array('cow','rat','pig','goat')
+        console.log(animal)
+
+        //Add element to an array 
+        food.push('orange')
+        console.log(food)
+        food.unshift('red apple')
+        console.log(food)
+
+        //remove element from an aray
+        food.pop()
+        console.log(food)
+        food.shift()
+        console.log(food)
+
+        //replacing element in array
+        food[1]='grapes'
+        console.log(food)
+
+
+        //array method
+        console.log('Array Method')
+        console.log(food.concat(animal))
+        console.log(food.indexOf('mango'))
+        console.log(food.includes('mango'))
+        console.log(food.sort())
+        console.log(food.reverse())
+        console.log(animal.slice(1,3))
+
+        //find, filter, map
+
+        var age=[12,13,14,15,16,17,18,19,20]
+        function checkAge(a){
+            return a>=18
+        }
+
+        var aa=age.find(checkAge)
+        console.log(aa)
+
+        var bb=age.filter(checkAge)
+        console.log(bb)
+
+        //arrow function
+        var data=age.filter((a)=>a>=18)
+        console.log(data)
+        //map
+        var datamap=age.map((a)=>a+2)
+        console.log(datamap)
+
+        console.log("even odd")  
+        var number = [1,2,3,4,5,6,7,8,9,10]
+        var even=number.filter((a)=>a%2==0)
+        console.log(even)
+        var odd=number.filter((a)=>a%2!=0)
+        console.log(odd)
+        
+        // // var num = parseInt(prompt("Enter a number"))
+        // var remove = number.filter((a)=>a !== num)
+        // console.log(remove)
+
+        //object
+        var std={
+            name: "Umesh",
+            roll: "101",
+            ph:"9867556456"
+            
+        }
+        console.log(std.name)
+
+
+        var students =[
+            {id:1, name:"ram",roll:12},
+            {id:2, name:"Sita", roll:2},
+            {id:3, name:"Puran", roll:5},
+        ]
+
+        console.log(students[1].name)
+
+        var dataObject=students.map((a)=>a.name)
+        console.log(dataObject)
+
+
+
+
+
+
+    </script>
+</body>
+</html>

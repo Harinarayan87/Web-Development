@@ -1,0 +1,8 @@
+.image{
+    height: 260px;
+    width: 350px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}

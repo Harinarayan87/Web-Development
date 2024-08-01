@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root{
+    --primary: #f69226;
+    --secondary: #4570b6;
+
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.icon{
+    padding: 0 10px;
+}
+.btn{
+    background: var(--secondary);
+}
+.cart{
+    background: #f3f5f9;
+    color: var(--secondary);
+    padding:10px 12px;
+    font-size: 18px;
+    margin: 0 8px;
+}
+.bg{
+    background: var(--primary);
+}
+.logo{
+    width: 75%;
+
+}
+.navbar{
+    background: var(--secondary);
+    color: white;
+    padding: 10px 0;
+}
+.btn1{
+    color: var(--secondary);
+    font-size: 18px;
+    font-weight: 500;
+}
+.icon1{
+    width: 10%;
+    height: 40%;
+}
+
+.shadow a{
+    border-bottom: 1px solid gray;
+    padding: 7px 10px 7px 7px;
+}
+.swiper-wrapper{
+    height: 130px;
+    padding: 30px 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.icon2{
+    font-size: 12px;
+   
+}
+.orange{
+    color: var(--primary);
+}
+/* .categories{
+    width: 21%;
+} */
+.product-box{
+    width: 220px;
+    height: 320px;
+    /* overflow: hidden; */
+}
+.img-box img{
+    width: 220px;
+    height: 245px;
+}
+.product-box img{
+    width: 100%;
+    transition: 0.5s;
+}
+
+.product-box:hover img{
+    transform: scale(1.1);
+}
+.quickview{
+    /* position: absolute; */
+    width: 220px;
+    background: white;
+    bottom: -50px;
+}
+.product-box:hover .quickview{
+    bottom: 0;
+    transition: all  ease 0.3s;
+} 
+.title{
+    font-size: 16px;
+    font-weight: 400;
+    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+}
+
+.blue{
+    background: var(--secondary);
+}
+.white{
+    color: var(--secondary);
+}
+.product{
+    width: 280px;
+    height: 150px;
+}
+.content{
+    padding: 0 10px;
+}
+.content p{
+    width: 100px;
+}
+.product img{
+    width: 130px;
+    height: 150px;
+    padding: 8px 0 8px 8px;
+    transition: 0.5s;
+}
+.product img:hover{
+    transform: scale(1.1);
+  
+}
+.sticky{
+    position:sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: white;
+}
+.w-80{
+    width: 80px;
+    height: 80px;
+}
+.brands{
+    width: 60px !important;
+    margin: 0;
+}
+
+.footer{
+    background: #39474f;
+    color: white;
+    padding: 20px 0;
+}
+.footer-heder {
+    display: inline-block;
+}
+.address_under_line{
+    width: 100%;
+}
+.white, .white a{
+    color: white;
+}
+
+/* 
+<div class="product d-flex gap-2 align-items-center rounded shadow">
+<div class="img shadow">
+      <img src="https://www.digitalsahuji.com/storage/app/public/product/thumbnail/2024-04-30-6630b1058130e.png"
+      alt="">
+</div>
+<div class="content">
+    <p class="fs-16px">Khind Multi Blender</p>
+    <span class="d-inline-block font-size-sm text-body">
+    <i class="bi bi-star" style="color:#fea569 !important"></i>
+    <i class="bi bi-star" style="color:#fea569 !important"></i>
+    <i class="bi bi-star" style="color:#fea569 !important"></i>
+    <i class="bi bi-star" style="color:#fea569 !important"></i>
+    </span>
+    <p class="white fw-bold">रु7,799</p>
+</div>
+</div> */

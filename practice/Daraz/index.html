@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daraz</title>
+     <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <div class="container">
+            <div class="top flex">
+                <div class="top-left">
+                    <ul class="flex">
+                        <li><a href="">Become a Seller</a></li> 
+                        <li><a href="">Payments & Recharge</a></li> 
+                        <li><a href="">Help & Support</a></li>
+                        <li><a href="">Daraz Logistics Partner</a></li>
+                    </ul>
+                </div>
+                <div class="top-right">
+                    <a class="btn" href="">
+                        <img class="logo1" src="https://img.alicdn.com/imgextra/i1/O1CN01Ie2YnK1JmZ1mL3fY5_!!6000000001071-2-tps-60-60.png" alt=""><span>Save More on App</span></a>
+                </div>
+            </div>
+            <div class="nav flex">
+                <div class="logo">
+                    <img class="logo" src="https://icms-image.slatic.net/images/ims-web/e6ac6883-1158-4663-bda4-df5a1aa066e5.png" alt="">
+                </div>
+                <div class="">
+                    <form action="">
+                        <input class="search" type="text" placeholder="Search in Daraz">
+                        <button class="btn1"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+                <div class="nav-right">
+                    <ul class="flex">
+                        <li><a href=""><i class="fa-solid fa-user icon"></i>Login</a></li>
+                        <li><a href="">Sign Up</a></li>
+                        <li><a href=""><i class="fa-solid fa-globe icon"></i>EN</a></li>
+                        <li><a href=""><i class="fa-solid fa-cart-shopping icon"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="menu">
+        <div class="container flex">
+            <div class="menu-left">
+                <ul>
+                        <li><a href="">Women's Fashion</a></li>
+                        <li><a href="">Health & Beauty</a></li>
+                        <li><a href="">Men's Fashion</a></li>
+                        <li><a href="">Watches & Accessories</a></li>
+                        <li><a href="">Electronic Devices</a></li>
+                        <li><a href="">TV & Home Appliances</a></li>
+                        <li><a href="">Electronic Accessories</a></li>
+                        <li><a href="">Groceries & Pets</a></li>
+                        <li><a href="">Babies & Toys</a></li>
+                        <li><a href="">Home & Lifestyle</a></li>
+                        <li><a href="">Sports & Outdoor</a></li>
+                        <li><a href="">Motors, Tools & DIY</a></li>   
+                </ul>
+            </div>
+            <div class="menu-right">
+                 <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img class="w-100" src="https://icms-image.slatic.net/images/ims-web/9f570eca-fdfc-472b-b27f-d34943c11235.jpg" alt=""></div>
+      <div class="swiper-slide"><img class="w-100" src="https://icms-image.slatic.net/images/ims-web/f50c5287-556a-4b77-9c0f-9be9e89451f1.jpg" alt=""></div>
+      <div class="swiper-slide"><img class="w-100" src="https://icms-image.slatic.net/images/ims-web/6efe676e-974c-46a1-9256-3ff208019ad3.jpg" alt=""></div>
+      <div class="swiper-slide"><img class="w-100" src="https://icms-image.slatic.net/images/ims-web/72a71173-4fbe-4712-81ff-4354251562d8.jpg" alt=""></div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+            </div>
+        </div>
+    </section>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+    <script src="https://kit.fontawesome.com/36e6b8d5e8.js" crossorigin="anonymous"></script>
+</body>
+</html>

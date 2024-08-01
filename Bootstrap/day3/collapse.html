@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .accordion-button:not(.collapsed) {
+            background-color: #d7f8dc;
+            color: #721c24;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>COllapse</h1>
+            <button data-bs-toggle="collapse" href="#abc" class="btn btn-warning">Hide/Show</button>
+            <div id="abc" class="collapse">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+            </div>
+        </div>
+
+        <div class="row py-4">
+            <div class="col-lg-4">
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Home
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos
+                                est eaque quam tenetur, asperiores aliquam dolore modi eveniet aliquid consequatur
+                                reiciendis, sunt beatae tempora nesciunt. Molestiae eaque excepturi dolor esse.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                About Us
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Incidunt dolore blanditiis obcaecati rem ratione quis facilis, doloremque molestiae in?
+                                Modi maxime vitae delectus quos deserunt? Voluptate iure id quam animi?.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Contact Us
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Laboriosam aperiam odio asperiores quidem voluptatibus pariatur doloribus sapiente
+                                alias! Doloribus officiis aperiam aliquam quam mollitia laborum, saepe sit expedita
+                                veritatis dolores..</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapsefour" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                Services
+                            </button>
+                        </h2>
+                        <div id="flush-collapsefour" class="accordion-collapse collapse"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Laboriosam aperiam odio asperiores quidem voluptatibus pariatur doloribus sapiente
+                                alias! Doloribus officiis aperiam aliquam quam mollitia laborum, saepe sit expedita
+                                veritatis dolores..</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-4">
+
+            <h1 data-bs-toggle="modal" data-bs-target="#a">Modal</h1>
+            <!-- Modal -->
+            <div class="modal fade" id="a" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content p-4">
+                        <h2>Login Form</h2>
+                        <form action="">
+                            <div>
+                                <input type="text" placeholder="Enter your Email" class="form-control">
+                            </div>
+                            <div class="my-3">
+                                <input type="password" placeholder="Enter your password" class="form-control">
+                            </div>
+                            <button class="btn btn-primary">Login</button>
+                        </form>
+                        <!-- <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div> -->
+                        <!-- <div class="modal-body">
+                            <input type="text" class="form-control">
+                        
+                        </div> -->
+                        <!-- <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-primary position-relative">
+                    Notifications <span class="badge position-absolute top-0 start-100 translate-middle  rounded-pill bg-danger">9
+                    </span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
