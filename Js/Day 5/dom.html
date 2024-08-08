@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Demo</h1>
+    <button onclick="document.getElementsByTagName('h1')[0].innerHTML='Hello'" >Chnage Content</button>
+    <div class="abc">Hello Sir</div>
+    <button onclick="document.getElementsByClassName('abc')[0].innerHTML='Hello World'" >Chnage Content</button>
+    <p id="para">Hello World</p>
+    <button onclick="document.getElementById('para').innerHTML='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, explicabo.'" >Chnage Content</button>
+
+    <hr>
+    <div class="sir">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt accusamus officia asperiores delectus, quaerat vitae fuga explicabo a eius fugiat dicta labore neque consequuntur porro sunt incidunt ea eligendi rem!
+    </div>
+    <button onclick="document.querySelector('.sir').style.color='red'">Color</button>
+    <button onclick="document.querySelector('.sir').style.background='yellow'">BG Color</button>
+    <button onclick="document.querySelector('.sir').style.fontSize='50px'">Font Size</button>
+    <button onclick="document.querySelector('.sir').style.marginLeft='255px'">Margin</button>
+
+    <button onclick="document.querySelector('.sir').classList.add('abcd')">Add Class</button>
+    <button onclick="document.querySelector('.sir').classList.remove('abcd')">Remove Class</button>
+    <button onclick="document.querySelector('.sir').classList.toggle('abcd')">Toggle Class</button>
+    
+    <style>
+        .abcd{
+            background: orange;
+            font-size:30px;
+            font-weight: bold;
+            color: red;
+            text-align: center;
+        }
+    </style>
+       
+       
+
+
+
+</body>
+</html>

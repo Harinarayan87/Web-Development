@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <button class="a">Hide</button>
+    <button class="b">Show</button>
+    <button class="c">toggle</button>
+    <button class="d">SlideUp</button>
+    <button class="e">SlideDown</button>
+    <button class="f">Slidetoggle</button>
+    <button class="g">fadeIn</button>
+    <button class="h">fadeOut</button>
+    <button class="i">fadeToggle</button>
+
+    <button class="j">append</button>
+    <button class="k">prepend</button>
+    <button class="l">after</button>
+    <button class="m">before</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $('.a').click(function(){
+            $('h1').hide()
+        })
+        $('.b').click(function(){
+            $('h1').show()
+        })
+        $('.c').click(function(){
+            $('h1').toggle()
+        })
+        $('.d').click(function(){
+            $('h1').slideUp()
+        })
+        $('.e').click(function(){
+            $('h1').slideDown()
+        })
+        $('.f').click(function(){
+            $('h1').slideToggle()
+        })
+        $('.g').click(function(){
+            $('h1').fadeIn()
+        })
+        $('.h').click(function(){
+            $('h1').fadeOut(4000)//4000ms=4s
+        })
+        $('.i').click(function(){
+            $('h1').fadeToggle()
+        })
+        $('.j').click(function(){
+            $('h1').append('<input>')
+        })
+        $('.k').click(function(){
+            $('h1').prepend('<input>')
+        })
+        $('.l').click(function(){
+            $('h1').before('<input>')
+        })
+        $('.m').click(function(){
+            $('h1').after('<input>')
+        })
+    </script>
+</body>
+</html>

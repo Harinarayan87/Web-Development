@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .t > div{
+            width: 25px;
+            height: 3px;
+            background: #000;
+            margin: 2px 0;
+            transition: 0.9s;
+            border-radius: 2px;
+        }
+        .q .b{
+            display: none;
+        }
+        .q .a{
+            transform: rotate(35deg) translate(0px, 4px);
+        }
+        .q .c{
+            transform: rotate(-35deg) translate(-2px, -3px);
+        }
+        aside{
+            width: 0px;
+            height: 100vh;
+            background: pink;
+            position: fixed;
+            right: 0;
+            top: 0;
+            transition: 0.9s;
+        }
+        .mm{width: 240px;}
+    </style>
+</head>
+<body>
+    <div class="t" onclick="abc(this)">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+    <aside></aside>
+    <script>
+        function abc(a){
+            a.classList.toggle('q')
+            document.querySelector('aside').classList.toggle('mm')
+        }
+        
+    </script>
+</body>
+</html>

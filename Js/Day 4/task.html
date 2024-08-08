@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var family=[
+            {id:1, name:"Umesh",edu:"m"},
+            {id:2, name:"Aditya", edu:"b"},
+            {id:3, name:"Amrit", edu:"m"},
+            {id:4, name:"Sristi", edu:"m"},
+            {id:5, name:"Diya", edu:"b"},
+        ]
+
+        console.log(family)
+        // who have bachelor degree
+        var bachelor= family.filter((item)=>item.edu=="b")
+        console.log(bachelor)
+        {bachelor.map((item1)=>document.write(`<h1> ${item1.name} </h1>`))}
+
+
+        
+    </script>
+</body>
+</html>

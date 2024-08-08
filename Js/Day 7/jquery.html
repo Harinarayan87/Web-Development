@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            background: orange;
+            font-size: 40px;
+
+        }
+        .demo{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">Helo Nepal</div>
+    <button class="a">Empty</button>
+    <button class="b">Remove</button>
+    <button class="c">Css</button>
+    <button class="d">Add Class</button>
+    <button class="e">Remove Class</button>
+    <button class="f">Toggle Class</button>
+
+    <button class="g">Animate</button>
+    <button class="h">Stop</button>
+    <button class="i">CHain</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $('.a').click(function(){
+            $('.demo').empty()
+        })
+
+        $('.b').click(function(){
+            $('.demo').remove()
+        })
+
+        $('.c').click(function(){
+            $('.demo').css({
+                color: 'red',
+                background: 'yellow'
+            })
+        })
+
+        $('.d').click(function(){
+            $('.demo').addClass('abc')
+        })
+
+        $('.e').click(function(){
+            $('.demo').removeClass('abc')
+        })
+
+        $('.f').click(function(){
+            $('.demo').toggleClass('abc')
+        })
+
+        $('.g').click(function(){
+            $('.demo').animate({left: '500px'},6000)
+        })
+
+        $('.h').click(function(){
+            $('.demo').stop()
+        })
+
+        $('.i').mouseenter(function(){
+            $('.demo').slideUp().slideDown()
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var  product =[
+            {id:1, name:"Asus TUF F15", cat:"gaming"},
+            {id:2, name:"Asus Vivobook", cat:"notebook"},
+            {id:3, name:"Acer Nitro 5", cat:"gaming"},
+            {id:4, name:"Lenovo ", cat:"Notebook"},
+            {id:5, name:"HP Victus", cat:"gaming"},
+        ]
+         
+
+        {product.map((item)=>
+        document.write(`<h1> ${item.id} ${item.name} ${item.cat}</h1>`))
+        }
+
+        document.write(`<h1>Filtered</h1>`)
+
+        var gaming= product.filter((item2)=>item2.cat=="gaming") 
+        
+        {gaming.map((item3)=>
+        document.write(`<h1> ${item3.id} ${item3.name} ${item3.cat}</h1>`))}
+    </script>
+</body>
+</html>
