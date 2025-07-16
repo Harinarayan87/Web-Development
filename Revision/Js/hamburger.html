@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .line1,.line2,.line3{
+            width: 27px;
+            height: 4px;
+            background: #000;
+            margin: 5px 0;
+            transition: 0.9s;
+        }
+        .new .line2{
+            opacity: 0;
+        }
+        .new .line1{
+            transform: rotate(-45deg) translate(0px, 4px);
+        }
+        .new .line3{
+            transform: rotate(45deg) translate(-8px, -14px);
+        }
+    </style>
+</head>
+<body>
+    <div class="bar" onclick="abc()">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+
+    <script>
+        function abc(){
+            document.querySelector('.bar').classList.toggle('new')
+        }
+    </script>
+</body>
+</html>

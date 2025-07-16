@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="textbox">
+    <button onclick="document.querySelector('#textbox').value +='1'">1</button>
+    <button onclick="document.querySelector('#textbox').value +='2'">2</button>
+    <button onclick="document.querySelector('#textbox').value +='3'">3</button>
+    <button onclick="document.querySelector('#textbox').value +='4'">4</button>
+    <button onclick="document.querySelector('#textbox').value +='5'">5</button>
+    <hr>
+    <button onclick="document.querySelector('#textbox').value +='+'">+</button>
+    <button onclick="document.querySelector('#textbox').value +='-'">-</button>
+    <button id="result" onclick="abc()">=</button>
+    <script>
+        function abc(){
+            document.querySelector('#textbox').value= eval(document.querySelector('#textbox').value)
+        }
+
+    </script>
+</body>
+</html>

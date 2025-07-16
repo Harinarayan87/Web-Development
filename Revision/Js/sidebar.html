@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        aside{
+            width: 200px; height: 100vh; background: greenyellow; position: fixed; top: 0; left: -200px; transition: 0.9s;
+        }
+        .show{
+            left: 0;
+        }
+        .move{
+            margin-left: 200px;
+        }
+        .website{
+            transition: 0.9s;
+        }
+        aside span{
+            color: white;
+            background: red;
+            position: absolute;
+            right: 0;
+            font-size: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="website">
+        <button id="btn" onclick="abc()">Menu</button>
+        <aside>
+            <span onclick="abc()">X</span>
+        </aside>
+    </div>
+    <script>
+        function abc(){
+        document.querySelector('aside').classList.toggle('show')
+        document.querySelector('.website').classList.toggle('move')
+        }
+    </script>
+</body>
+</html>

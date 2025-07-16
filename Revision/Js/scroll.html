@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 1900px;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+            background: green;
+            left: 0;
+            top: 0;
+            transition: 0.9s;
+        }
+        .aa{
+            position: fixed;
+            background: red;
+            height: 80px;
+
+        }
+        .logo{
+            width: 70px;
+            height: 60px;
+            background: lightgreen;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+    </header>
+    <script>
+        window.addEventListener('scroll', ()=>{
+            if(scrollY>200){
+                document.querySelector('header').classList.add('aa')
+                document.querySelector('.logo').style.display='block'
+            }
+            else
+            {
+                document.querySelector('header').classList.remove('aa')
+                document.querySelector('.logo').style.display='none'
+            }
+        })
+    </script>
+</body>
+</html>

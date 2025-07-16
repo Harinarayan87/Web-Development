@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is text</h1>
+    <button onclick="document.querySelector('h1').innerHTML='Hello Sir'">Change text</button>
+    <hr>
+    <img src="https://i.pinimg.com/564x/e0/fd/25/e0fd25f9127a9a109a0648c83ee61643.jpg" alt="" width="300">
+    <button onclick="document.querySelector('img').src='https://img.freepik.com/premium-vector/incandescent-light-bulb-black-background-glowing-lightbulb-realistic-vector-illustration_261737-778.jpg?w=360'">ON</button>
+    <button onclick="document.querySelector('img').src='https://i.pinimg.com/564x/e0/fd/25/e0fd25f9127a9a109a0648c83ee61643.jpg'">OFF</button>
+    <hr>
+    <input id="pass" type="password">
+    <button id="btn" onclick="abc()">Show</button>
+    <script>
+        function abc(){
+            if(document.querySelector('#pass').type==='password')
+            {
+                document.querySelector('#pass').type='text'
+                document.querySelector('#btn').innerHTML='Hide'
+            }
+            else
+            {
+                {
+                document.querySelector('#pass').type='password'
+                document.querySelector('#btn').innerHTML='Show'
+            }
+            }
+
+        }
+    </script>
+</body>
+</html>

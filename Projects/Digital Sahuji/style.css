@@ -127,7 +127,6 @@ a{
 }
 .product img:hover{
     transform: scale(1.1);
-  
 }
 .sticky{
     position:sticky;

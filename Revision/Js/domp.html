@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .abc{
+        width: 200px;
+        height: 100vh;
+        background: red;
+        position: fixed;
+        right: -200px;
+        top: 0;
+        transition: 0.9s;
+      }
+      .m{
+        right: 0;
+      }
+      body{
+        height: 1990px;
+      }
+    </style>
+</head>
+<body>
+    <h1>demo</h1>
+  <div class="abc"></div>
+  <button onclick="document.querySelector('.abc').classList.toggle('m')">Click</button>
+    <script>
+
+  window.addEventListener('scroll',()=>{
+    console.log(scrollY)
+  })
+    </script>
+</body>
+</html>

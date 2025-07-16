@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">Id Selector</div>
+    <div class="demo">Class Selector</div>
+    <div class="demo">Second wala</div>
+    <h2>Tag Selector</h2><h2>Others</h2>
+    <script>
+        document.title='Changed'
+        console.log(document.getElementById('demo').innerHTML)
+        console.log(document.getElementsByClassName('demo')[1].innerHTML)
+        console.log(document.getElementsByClassName('demo')[0].style)
+        console.log(document.getElementsByTagName('h2')[0].innerHTML)
+           //OR
+        console.log(document.querySelectorAll('.demo')[1].innerHTML)
+        console.log(document.querySelector('h2').innerHTML)
+        console.log(document.querySelector('#demo').innerHTML)   
+    </script>
+</body>
+</html>

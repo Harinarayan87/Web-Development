@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var food=['rice','mango','apple','kiwi']
+        console.log(food[1])
+        for(a=1;a<4;a++){
+            console.log(food[a])
+        }
+        //for in/ of
+        for(const item of food){
+            console.log(`for in hai${item}`)
+        }
+        for(const item in food){
+            console.log(food[item])
+        }
+        //new array
+        var animal=new Array('cat','dog','cow','yamal')
+        console.log(animal)
+        //add element to an array
+        food.push('orange')
+        food.unshift('mitho apple')
+        console.log(food)
+        //remove element in array
+        food.pop()
+        console.log(food)
+        food.shift()
+        console.log(food)
+        //replacing
+        food[2]='banana'
+        console.log(food)
+        //concat
+        console.log(food.concat(animal))
+        console.log(food.indexOf('mango'))
+        console.log(food.includes('mango'))
+        console.log(food.sort())
+        console.log(food.reverse())
+        console.log(food.slice(0,2))
+        //find /filter /map
+        var age=[5,10,18,25,30,40,55]
+        function checkAge(a){
+            return a>16
+        }
+        var aa=age.find(checkAge)
+        console.log(aa)
+        var bb=age.filter(checkAge)
+        console.log(bb)
+        //arrow function
+        var data=age.filter((a)=>a>16)
+        console.log(data)
+
+        var datamap=age.map((a)=>a+5)
+        console.log(datamap)
+        var number=[1,2,3,4,5,6,7,8,9]
+        var even=number.filter((i)=>i%2==0)
+        console.log(even)
+        var odd=number.filter((i)=>i%2==1)
+        console.log(odd)
+        var num=5
+        //var num=parseInt(prompt("enter a number you dont want"))
+        var custom=number.filter((a)=>a!==num)
+        console.log(custom)
+
+        //object
+        var std={
+            name : "Umesh Bohara",
+            roll : 2,
+            ph    : 983682492332
+        }
+        var students=[
+            {name:"Umesh",roll:4,ph:986789788},
+            {name:"Manisha",roll:6,ph:9867855788},
+            
+        ]
+        console.log(students[1].name)
+
+        var dataobject=students.map((a)=>a.name)
+        console.log(dataobject)
+
+    </script>
+</body>
+</html>

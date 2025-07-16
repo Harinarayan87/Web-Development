@@ -1,11 +1,19 @@
 "use client";
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ProductByCat from "./component/ProductByCat"
 import { categoryData } from "./Data"
 import Link from "next/link"
+import Form from "./Form";
 function Home(){
   let [color,setColor]=useState('red')
   let [show,setShow]=useState(true)
+  useEffect(()=>{
+    document.title="Home Page"
+  },[])
+  let [data, setData]=useState([])
+  useEffect(()=>{
+    fetch('https://fakestoreapi.com/products').then(res=>res.json()).then(json=>setData(json))
+  })
   return(
     <>
     <section>
@@ -13,6 +21,14 @@ function Home(){
       <button onClick={()=>setColor('blue')}>Chnage Color</button>
       <h1 className={show? "": "hidden"}>Hello</h1>
       <button onClick={()=>setShow(!show)}>Toggle</button>
+      {/* //print data fetched using useEffect on line 13 */}
+      {/* {data.map((item)=>(
+        <li>{item.title}</li>
+      ))} */}
+    </section>
+
+    <section>
+      <Form/>
     </section>
 
 

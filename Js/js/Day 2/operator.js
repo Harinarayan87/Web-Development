@@ -36,7 +36,7 @@ console.log("Multiplication")
 console.log(d*=e) //d=d*e //d=5*6=30
 console.log("Division")
 console.log(d/=e) //d=d/e //d=30/6=5
-
+console.log(d+=e,d-=e)
 //Comparison Operators ==,===,!=,!==,>,<,>=,<=
 console.log("Comparison Operators")
 var f=5

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        #abc{
+            right: -100%;
+            transition: 0.9s;
+        }
+     
+        .ee{
+            right: 0 !important;
+          
+        }
+    </style>
+  </head>
+  <body class="h-[1900px]">
+    <header class="py-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <p>
+          Tuesday, July 15, 2025 <br />
+          ३१ असार २०८२ मंगलबार
+        </p>
+        <img
+          class="w-[120px]"
+          src="https://jcss-cdn.ekantipur.com/kantipurdaily/images/logo.png" alt="" />
+        <p>२२.७°C काठमाडौं <br />काठमाडौंमा वायुको गुणस्तर: ३३</p>
+      </div>
+    </header>
+    <nav id="menu" class="border p-2">
+      <div class="container mx-auto flex justify-between items-center">
+        <button>Menu</button>
+        <ul class="flex gap-4">
+          <li class="logo"><img class="w-[90px]" src="https://jcss-cdn.ekantipur.com/kantipurdaily/images/logo.png" alt=""></li>
+          <li>समाचार</li>
+          <li>अर्थ / वाणिज्य</li>
+          <li>विचार</li>
+          <li>खेलकुद</li>
+          <li>मनोरञ्जन</li>
+          <li>फोटोफिचर</li>
+          <li>फिचर</li>
+          <li>विश्व</li>
+          <li>ब्लग</li>
+          <li>कोसेली</li>
+          <li>प्रवास</li>
+          <li>शिक्षा</li>
+        </ul>
+        <p id="login">Login</p>
+      </div>
+    </nav>
+
+    <section id="abc" class="bg-black h-full w-full fixed right-0 top-0">
+        <span class=" absolute right-0 top-0 bg-green-500 p-2 ">X</span>
+
+    </section>
+    <script>
+        document.querySelector('#login').addEventListener('click',efg)
+         document.querySelector('#abc span').addEventListener('click',efg)
+
+       function efg(){
+            document.querySelector('#abc').classList.toggle('ee')
+        }
+        window.addEventListener('scroll', ()=>{
+            if(scrollY>200){
+                document.querySelector('#menu').classList.add('sticky','top-0')
+                document.querySelector('.logo').classList.remove('hidden')
+
+            }
+            else{
+                document.querySelector('#menu').classList.remove('sticky','top-0')
+                document.querySelector('.logo').classList.add('hidden')
+
+            }
+            
+        })
+    </script>
+  </body>
+</html>

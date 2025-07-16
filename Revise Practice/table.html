@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellpadding="5px">
+      
+        <script>
+            var row=prompt("number of row")
+            var col=prompt("number of cols")
+            for(var a=1;a<=row;a++){
+            document.write(`<tr>`)
+                for(var b=1;b<=col;b++){
+                    document.write(`<td><h1>R${a}C${b}</h1>`)
+                        document.write(`</td>`)
+                }
+                document.write(`</tr>`)    
+            }
+        </script>
+    </table>
+</body>
+</html>

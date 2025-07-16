@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .n {
+            background: blue;
+            color: red;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is demo</h1>
+    <button onclick="document.querySelector('h1').style.display='none'">Hide</button>
+    <button onclick="document.querySelector('h1').style.display='block'">Show</button>
+    <button onclick="document.querySelector('h1').style.color='red'">Color</button>
+    <button onclick="document.querySelector('h1').style.background='yellow'">BG</button>
+    <button onclick="document.querySelector('h1').style.fontSize='50px'">FS</button>
+    <button onclick="document.querySelector('h1').style.marginLeft='500px'">MarginLeft</button>
+    <button id="btn" onclick="task()">ALL</button>
+
+    <button onclick="document.querySelector('h1').classList.add('n')">AddClass</button>
+    <button onclick="document.querySelector('h1').classList.remove('n')">Remove</button>
+    <button onclick="document.querySelector('h1').classList.toggle('n')">Toggle</button>
+    <script>
+        function task(){
+            if(document.querySelector('#btn').innerHTML==='ALL')
+        {
+            document.querySelector('#btn').innerHTML='Undo'
+            document.querySelector('h1').style.color='red'
+            document.querySelector('h1').style.padding='20px'
+            document.querySelector('h1').style.fontSize='20px'
+            document.querySelector('h1').style.background='yellow'
+        }
+        else{
+            document.querySelector('#btn').innerHTML='ALL'
+            document.querySelector('h1').style='none'
+        }
+        }
+    </script>
+</body>
+</html>
