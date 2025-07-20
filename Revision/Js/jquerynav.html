@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background: green;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            transition: 0.93;
+            padding: 100px 0;
+        }
+        body{
+            height: 1900px;
+        }
+        .sticky{
+            background: red;
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(window).scroll(()=>{
+            if($(window).scrollTop() >200){
+                $("header").addClass('sticky');
+            }
+            else{
+                $("header").removeClass('sticky');
+            }
+        })
+    </script>
+
+</body>
+</html>
